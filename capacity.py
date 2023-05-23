@@ -125,10 +125,10 @@ edited_df = st.experimental_data_editor(df, key="capacity")
 if "df_value" not in st.session_state:
     st.session_state.df_value = edited_df
 
-add_button = st.button('Add Task')
-if add_button and edited_df is not None:
-    add_row()
-    save_data_to_csv()
+# add_button = st.button('Add Task')
+# if add_button and edited_df is not None:
+#   add_row()
+#  save_data_to_csv()
 
 refresh_button = st.button('Recalculate')
 if refresh_button and edited_df is not None:
